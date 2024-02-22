@@ -1,0 +1,13 @@
+{
+    "fields" : [
+        {
+            "label" : "Name",
+            "type" : "short-text"
+        },
+        {
+            "label" : "Prefix",
+            "type" : "short-text"
+        }
+    ],
+    "name" : "Create New WorkDoc Type"
+}

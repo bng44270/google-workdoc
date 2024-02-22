@@ -1,0 +1,21 @@
+{
+    "fields" : [
+        {
+            "label" : "Type",
+            "type" : "dropdown"
+        },
+        {
+            "label" : "Description",
+            "type" : "long-text"
+        },
+        {
+            "label" : "Your E-mail Address",
+            "type" : "short-text"
+        },
+        {
+            "label" : "Your Phone Number",
+            "type" : "short-text"
+        }
+    ],
+    "name" : "Create New WorkDoc"
+}

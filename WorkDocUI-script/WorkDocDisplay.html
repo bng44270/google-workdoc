@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+    <a href="<?= listingUrl ?>">Return to listing</a><br/><br/>
+    <label for="wd_type">WorkDoc Type:</label><input id="wd_type" value="<?= docType ?>" readonly /><br/>
+    <label for="wd_description">Description:</label><input id="wd_description" value="<?= docDesciption ?>" readonly /><br/>
+    <label for="wd_email">E-mail:</label><input id="wd_email" value="<?= docEmail ?>" readonly /><br/>
+    <label for="wd_phone">Phone Number:</label><input id="wd_phone" value="<?= docPhone ?>" readonly /><br/>
+    Comments:<br/>
+    <? for(var i = docComments.length - 1; i > -1; i--) { ?>
+    <span><b><?= docComments[i].user ?></b>:<?= docComments[i].text ?><br/>
+    <?= docComments[i].date ?><br/><br/>
+    <? } ?>
+    <a href="<?= listingUrl ?>">Return to listing</a><br/><br/>
+  </body>
+</html>

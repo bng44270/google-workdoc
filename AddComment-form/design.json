@@ -1,0 +1,17 @@
+{
+    "fields" : [
+        {
+            "label" : "WorkDoc Number",
+            "type" : "short-text"
+        },
+        {
+            "label" : "Comment",
+            "type" : "long-text"
+        },
+        {
+            "label" : "Your E-mail Address",
+            "type" : "short-text"
+        }
+    ],
+    "name" : "Add Comment"
+}
