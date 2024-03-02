@@ -1,4 +1,10 @@
 /*
+Requires property:
+
+    root_folder - ID of root folder containing WorkDoc app and data
+*/
+
+/*
 Trigger: on submit
 */
 function addComment() {

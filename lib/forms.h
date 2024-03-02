@@ -1,0 +1,12 @@
+#define NEW_FORM(formvar,formname)          var formvar = FormApp.create(formname);
+#define NEW_SHORT_TEXT_FIELD(formvar,fieldvar,fieldname)    var fieldvar = formvar.addTextItem().setTitle(fieldname);
+#define NEW_LONG_TEXT_FIELD(formvar,fieldvar,fieldname)     var fieldvar = formvar.addParagraphTextItem().setTitle(fieldname);
+#define NEW_LIST_FIELD(formvar,fieldvar,fieldname,listar)   var fieldvar = formvar.addListItem().setChoiceValues(JSON.parse(listar)).setTitle(fieldname);
+#define NEW_EMPTY_LIST_FIELD(formvar,fieldvar,fieldname)   var fieldvar = formvar.addListItem().setTitle(fieldname);
+#define NEW_DATE_FIELD(formvar,fieldvar,fieldname)     var fieldvar = formvar.addDateItem().setTitle(fieldname);
+#define NEW_TIME_FIELD(formvar,fieldvar,fieldname)     var fieldvar = formvar.addTimeItem().setTitle(fieldname);
+#define NEW_CHECKBOXES_FIELD(formvar,fieldvar,fieldname,listar)   var fieldvar = formvar.addCheckboxItem().setChoiceValues(JSON.parse(listar)).setTitle(fieldname);
+#define NEW_EMPTY_CHECKBOXES_FIELD(formvar,fieldvar,fieldname)   var fieldvar = formvar.addCheckboxItem().setTitle(fieldname);
+#define VAL_EMAIL(fieldvar)                fieldvar.setValidation(FormApp.createTextValidation().setHelpText("Please enter a valid e-mail address").requireTextIsEmail().build());
+#define VAL_PHONE(fieldvar)                fieldvar.setValidation(FormApp.createTextValidation().setHelpText("Please enter a valid phone number").requireTextMatchesPattern("^[(]*[ \\t]*[0-9]{3}[)-]*[ \\t]*[0-9]{3}[- \\t]*[0-9]{4}[ \\t]*$").build());
+#define VAL_PATTERN(fieldvar,helptext,pattern)      fieldvar.setValidation(FormApp.createTextValidation().setHelpText(helptext).requireTextMatchesPattern(pattern).build());

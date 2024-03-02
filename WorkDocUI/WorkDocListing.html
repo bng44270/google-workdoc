@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+    <div id="listingview">
+    <table>
+      <tr>
+        <th>Description</th>
+        <th>Created</th>
+        <th>Created by</th>
+      </tr>
+      <? docFiles.forEach(f => { ?>
+      <tr>
+        <td><a href="?action=view&file=<?= f.filename ?>"><?= f.description.slice(0,30) + '...' ?></a></td>
+        <td><?= f.created ?></td>
+        <td><?= f.userEmail ?></td>
+      </tr>
+      <? }); ?>
+    </table>
+    </div>
+  </body>
+</html>

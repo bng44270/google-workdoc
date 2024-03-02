@@ -1,0 +1,73 @@
+{
+    "forms" : [
+        {
+            "fields" : [
+                {
+                    "label" : "WorkDoc Number",
+                    "type" : "short-text"
+                },
+                {
+                    "label" : "Comment",
+                    "type" : "long-text"
+                },
+                {
+                    "label" : "Your E-mail Address",
+                    "type" : "short-text",
+                    "eval" : "email"
+                }
+            ],
+            "name" : "Add Comment"
+        },
+        {
+            "fields" : [
+                {
+                    "label" : "Type",
+                    "type" : "dropdown"
+                },
+                {
+                    "label" : "Description",
+                    "type" : "long-text"
+                },
+                {
+                    "label" : "Your E-mail Address",
+                    "type" : "short-text",
+                    "eval" : "email"
+                },
+                {
+                    "label" : "Your Phone Number",
+                    "type" : "short-text",
+                    "eval" : "phone"
+                },
+                {
+                    "label" : "Current Stage",
+                    "type" : "dropdown",
+                    "list" : [
+                        "New",
+                        "Working",
+                        "Waiting",
+                        "Closed",
+                        "Canceled"
+                    ]
+                }
+            ],
+            "name" : "Create New WorkDoc"
+        },
+        {
+            "fields" : [
+                {
+                    "label" : "Name",
+                    "type" : "short-text"
+                },
+                {
+                    "label" : "Prefix",
+                    "type" : "short-text"
+                },
+            {
+                "label" : "Stages",
+                "type" : "long-text"
+            }
+            ],
+            "name" : "Create New WorkDoc Type"
+        }                
+    ]
+}
